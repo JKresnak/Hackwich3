@@ -17,20 +17,40 @@ class ViewController: UIViewController {
     
     var firstString = "The background color will turn red"
     var secondString = "Turns blue"
-   
+    var Thomas = "Arriving"
+    var Percy = "Leaving"
+    
+    @IBOutlet weak var RedLabel: UILabel!
+
+    @IBOutlet weak var BlueLabel: UILabel!
+    
+    @IBOutlet weak var GreenLabel: UILabel!
+    
     @IBAction func ChangecoloronButtonPress(_ sender: Any) {
-        if firstString == "The background color will turn blue"
+        if firstString == "The background color will turn red"
     {
             self.view.backgroundColor = UIColor.red
+        self.RedLabel.text = "Red"
     }
     else
     {
         self.view.backgroundColor = UIColor.blue
-    }
+    self.BlueLabel.text = "Blue"
+        }
     
     }
 
+    @IBAction func MagicButton(_ sender: Any) {
+        if Thomas == "Arriving"
+        {
+            self.view.backgroundColor = UIColor.green
+            self.GreenLabel.text = "green"
+        }
+        else
+        { self.view.backgroundColor = UIColor.blue
+        }
+    print("I completed both problem sets")
+        
+    }
+    
 }
-
-
-
